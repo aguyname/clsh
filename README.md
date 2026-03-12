@@ -25,7 +25,7 @@ chmod +x scripts/install.sh
 ## Quick Start
 ```c
     #include "clsh.c"
-    int main() {
+    int main(int argc, char **argv) {
     clsh my_obj;
     initclsh(&my_obj);
     char *commands[256], *files[256], *spe[256], *unknown[256];
