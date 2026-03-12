@@ -24,14 +24,24 @@ chmod +x scripts/install.sh
 
 ## Quick Start
 ```c
-    #include "clsh.c"
-    int main(int argc, char **argv) {
+#include <stdio.h>
+#include "clsh.c"
+
+int main(int argc, char **argv) {
     clsh my_obj;
     initclsh(&my_obj);
-    char *commands[256], *files[256], *spe[256], *unknown[256];
+
+    char *commands[256];
+    char *files[256];
+    char *spe[256];
+    char *unknown[256];
+
     CLShandler(&my_obj, commands, files, spe, unknown, argc, argv);
-    for(int i = 0; i < getspelen(&my_obj); i++) {
-        printf("%s\n", spe[i]); // print special statements Example: '--help'
+
+    for (int i = 0; i < getspelen(&my_obj); i++) {
+        printf("%s\n", spe[i]); // Example: "--help"
     }
-   }
+
+    return 0;
+}
 ```
