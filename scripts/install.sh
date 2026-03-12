@@ -4,9 +4,7 @@
 # Author: T.Vikram (an idiot don't be like me)
 # Date: 12/06/2026
 
-echo "==================================="
-echo "CLSH - Command Line Statement Handler"
-echo "==================================="
+echo "building library's..."
 
 # Get the script's directory (where this installer is located)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
