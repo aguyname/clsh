@@ -11,6 +11,7 @@
 #ifndef CLSH_H
 #define CLSH_H
 
+#include <stddef.h>
 //core clsh structure
 typedef struct clsh {
         //limits
