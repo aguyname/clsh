@@ -6,7 +6,7 @@ A lightweight C library for parsing command-line arguments into categories:
 - Files (arguments containing `.`)
 - Unknown (everything else)
 
-##Installation
+## Installation
 
 ```bash
 git clone https://github.com/aguyname/clsh.git
