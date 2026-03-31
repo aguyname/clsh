@@ -45,6 +45,8 @@ void setpeciallim(clsh *obj, size_t lim); //set the limit of maximum no of speci
 
 void setunlim(clsh *obj, size_t lim); //set the limit of maximum no of unknown statements. Usage: setunlim(&my_obj, 1024);
 
+void setlimits(clsh *obj, size_t cmd, size_t fileslim, size_t spe, size_t unknown);
+
 //Subfuncs2:
 size_t getcmdlen(const clsh *obj); //get the no of command statements. Usage: int cmmd_count =  getcmdlen(&my_obj);
 
